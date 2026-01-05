@@ -3,13 +3,16 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html body{
+	background-color: #f6f4ff;
+}
 #Industry-Leading-process{
 	background-image: url("images/0061.png");
 }
 #Industry-Leading-process .round{
 	width: 90px;
 	height: 90px;
-	background-color: lightgray;
+	background-color: white;
 	border-radius: 50%;
 	display: flex;
     align-items: center;
@@ -24,7 +27,7 @@
 }
 .service-card .round{
 	padding: 15px;
-	background-color: lightgray;
+	background-color: white;
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
@@ -38,14 +41,39 @@
 .service-card .card-body .card-title{
 	margin-top: 40px;
 }
+#project-card .row .card{
+	margin: auto;
+	width: 32%;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+	font-size: large;
+}
+#project-card .card-body span{
+	margin: 3px;
+	padding: 10px;
+}
 .tech-img{
 	width: auto;
 	height: 180px;
 	margin: 10px;
 	padding: 10px;
-	background-color: lightgray;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+#techbutton .btn{
+	margin: 10px;
+	font-size: large;
+	font-weight: 500;
+}
+#techbutton .active{
+	color: white;
+	background-color: #00537d;
+}
+#techbutton button:hover{
+	color: white;
+	background-color: #00537d;
 }
