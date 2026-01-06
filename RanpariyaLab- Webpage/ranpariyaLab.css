@@ -6,6 +6,9 @@
 html body{
 	background-color: #f6f4ff;
 }
+#service-CardDeclaration .row .card-container{
+	margin-bottom: 80px;
+}
 #Industry-Leading-process{
 	background-image: url("images/0061.png");
 }
@@ -42,12 +45,13 @@ html body{
 	margin-top: 40px;
 }
 #project-card .row .card{
-	margin: auto;
+/*	margin: auto;
 	width: 32%;
 	display: flex;
 	justify-content: space-between;
-	border-radius: 10px;
-	font-size: large;
+	border-radius: 10px;*/
+	font-size: 16px;
+	font-weight: 500;
 }
 #project-card .card-body span{
 	margin: 3px;
@@ -76,4 +80,42 @@ html body{
 #techbutton button:hover{
 	color: white;
 	background-color: #00537d;
+}
+#client .animation img{
+	filter: grayscale(100%);
+}
+#client .animation img:hover{
+	filter: grayscale(0%);
+}
+#client .row .gif{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+#client .row .round{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: 1px solid black;
+	border-radius: 50%;*/
+}
+#client .row .round img{
+	width: 110px;
+	height: 110px;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+#newsletter .news{
+	margin: 80px 0px;
+	padding: 50px 0px;
+	background-color: white;
+}
+#newsletter .row{
+	background-image: url(img/white_banner_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
