@@ -6,6 +6,9 @@
 html body{
 	background-color: #f6f4ff;
 }
+.fixed-top{
+	background-color: rgba(252, 254, 255, 0.8);
+}
 #service-CardDeclaration .row .card-container{
 	margin-bottom: 80px;
 }
@@ -44,12 +47,10 @@ html body{
 .service-card .card-body .card-title{
 	margin-top: 40px;
 }
+.processImg .arrow{
+	transform: rotate(45deg);
+}
 #project-card .row .card{
-/*	margin: auto;
-	width: 32%;
-	display: flex;
-	justify-content: space-between;
-	border-radius: 10px;*/
 	font-size: 16px;
 	font-weight: 500;
 }
@@ -61,12 +62,17 @@ html body{
 	width: auto;
 	height: 180px;
 	margin: 10px;
-	padding: 10px;
+	padding: 5px;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+.tech-img img{
+	max-width: 100%;
+	margin-bottom: 15px;
+	height: auto;
 }
 #techbutton .btn{
 	margin: 10px;
@@ -80,6 +86,16 @@ html body{
 #techbutton button:hover{
 	color: white;
 	background-color: #00537d;
+}
+#client .animation{
+	margin-bottom: 100px !important;
+}
+.owl-stage{
+	display: flex;
+	align-items: center;
+}
+.owl-stage .owl-item .item{
+	width: 200px;
 }
 #client .animation img{
 	filter: grayscale(100%);
@@ -98,8 +114,6 @@ html body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*border: 1px solid black;
-	border-radius: 50%;*/
 }
 #client .row .round img{
 	width: 110px;
@@ -107,6 +121,14 @@ html body{
 	padding: 10px;
 	border: 1px solid black;
 	border-radius: 50%;
+}
+#client .card-body .card-title{
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+#client .card-body .card-text{
+	font-size: 1.2rem;
+	text-align: justify;
 }
 #newsletter .news{
 	margin: 80px 0px;
@@ -118,4 +140,26 @@ html body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+@media screen and (max-width: 767px){
+    #client .row .round{
+    	display: block;
+    	position: relative;
+    	left: 20px;
+    	top: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+	.processImg .mt-5{
+		margin: 0px !important;
+	}
+	.processImg >div{
+		margin: 10px !important;
+	}
+    .processImg >div:nth-child(even) img{
+    	transform: rotate(100deg) !important;
+    	margin: 20px 0;
+    }
 }
