@@ -9,36 +9,57 @@
     <link rel="stylesheet" type="text/css" href="ranpariyaLab.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 	<title>Ranpariya The Development Lab</title>
 </head>
 <body>
-	<header>
-		<nav id="navbar" class="container navbar navbar-expand mb-5">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#"><img src="img/Header-Logo.png" class="" width="250" height="80"></a>
-				<div id="navbarContent" class="collapse navbar-collapse justify-content-end">
-					<ul class="navbar-nav">
-						<li class="nav-item m-3 text-dark"><a href="#" class="nav-link text-dark text-decoration-none fs-5">Home</a></li>
-						<li class="nav-item m-3 text-dark"><a href="#" class="nav-link text-dark text-decoration-none fs-5">About</a></li>
-						<li class="nav-item m-3 text-dark"><a href="#" class="nav-link text-dark text-decoration-none fs-5">Services</a></li>
-						<li class="nav-item m-3 text-dark"><a href="#" class="nav-link text-dark text-decoration-none fs-5">Careers</a></li>
-						<li class="nav-item m-3 text-dark"><a href="#" class="nav-link text-dark text-decoration-none fs-5">Contact Us</a></li>
-					</ul>
-				</div>
-			</div>
+	<header id="header">
+		<nav class="navbar navbar-expand-lg">
+		  <div class="container">
+		    <a class="navbar-brand fw-bold" href="#"><img src="img/Header-Logo.png" class="" width="240" height="70"></a>
+
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+
+		    <div class="collapse navbar-collapse" id="mainMenu">
+		      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+		        <li class="nav-item">
+		          <a class="nav-link text-dark m-2 fs-5" href="#">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link text-dark m-2 fs-5" href="#About">About</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link text-dark m-2 fs-5" href="#">Services</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link text-dark m-2 fs-5" href="#">Careers</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link text-dark m-2 fs-5" href="#">Contact Us</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
 		</nav>
 	</header>
 	<section id="contactUs" class="container-fluid mb-5">
 		<div class="row align-items-center justify-content-evenly">
-			<div class="col-md-5 contentText">
+			<div class="col-md-12 col-lg-5 contentText">
 				<div class="content mt-2">
-					<h1 class="h1 display-4">Deliver Innovative IT</h1>
-					<h1 class="h1 display-4">Solutions For Technolugy</h1>
+					<h1 class="h1 display-5">Deliver Innovative IT</h1>
+					<h1 class="h1 display-5">Solutions For Technology</h1>
 					<p class="fs-5">Let’s embody your beautiful ideas together, simplify the way you visualize your next big things. </p>
 					<button class="btn btn-success">Contact Us</button>
 				</div>
 			</div>
-			<div class="col-md-5 contentImage">
+			<div class="col-md-12 col-lg-5 d-flex justify-content-center contentImage">
 				<img src="img/index-banner.svg" class="img-fluid float-end" width="600">
 			</div>
 		</div>
@@ -185,54 +206,54 @@
 			<hr>
 			<p>Our industry-leading software development process ensures that we deliver high-quality, reliable, and secure products and services to our clients.</p>
 		</div>
-		<div class="container mb-5">
-			<div class="row justify-items-center">
-				<div class="col-md-1 mt-5">
+		<div class="container mb-5" >
+			<div class="row justify-content-between processImg">
+				<div class="col-md-12 col-lg-1 d-flex flex-column justify-content-center align-items-center mt-5">
 					<div class="round">
 						<img src="img/discussion.png">
 					</div>
 					<p class="text-center mt-2">Discuss</p>
 				</div>
-				<div class="col-md-1 mt-5">
+				<div class="col-md-12 col-lg-1 d-flex flex-column justify-content-center align-items-center">
 					<img src="img/Vector.svg">
 				</div>
-				<div class="col-md-1">
+				<div class="col-md-12 col-lg-1 d-flex flex-column justify-content-center align-items-center">
 					<div class="round">
 						<img src="img/planning.png">
 					</div>
 					<p class="text-center mt-2">Planning</p>
 				</div>
-				<div class="col-md-1 mt-5">
-					<img src="img/Vector.svg" style="transform: rotate(45deg);">
+				<div class="col-md-12 col-lg-1 d-flex flex-column justify-content-center align-items-center">
+					<img src="img/Vector.svg" class="arrow">
 				</div>
-				<div class="col-md-1 mt-5">
+				<div class="col-md-12 col-lg-1 d-flex flex-column justify-content-center align-items-center mt-5">
 					<div class="round">
 						<img src="img/sketch.png">
 					</div>
 					<p class="text-center mt-2">Sketch</p>
 				</div>
-				<div class="col-md-1 mt-5">
+				<div class="col-md-12 col-lg-1 d-flex flex-column justify-content-center align-items-center">
 					<img src="img/Vector.svg">
 				</div>
-				<div class="col-md-1">
+				<div class="col-md-12 col-lg-1 d-flex flex-column justify-content-center align-items-center">
 					<div class="round">
 						<img src="img/graphic-design-home.png">
 					</div>
 					<p class="text-center mt-2">Design</p>
 				</div>
-				<div class="col-md-1 mt-5">
-					<img src="img/Vector.svg" style="transform: rotate(45deg);">
+				<div class="col-md-12 col-lg-1 d-flex flex-column justify-content-center align-items-center">
+					<img src="img/Vector.svg" class="arrow">
 				</div>
-				<div class="col-md-1 mt-5">
+				<div class="col-md-12 col-lg-1 d-flex flex-column justify-content-center align-items-center mt-5">
 					<div class="round">
 						<img src="img/data.png">
 					</div>
 					<p class="text-center mt-2">Development</p>
 				</div>
-				<div class="col-md-1 mt-5">
+				<div class="col-md-12 col-lg-1 d-flex flex-column justify-content-center align-items-center">
 					<img src="img/Vector.svg">
 				</div>
-				<div class="col-md-1">
+				<div class="col-md-12 col-lg-1 d-flex flex-column justify-content-center align-items-center">
 					<div class="round">
 						<img src="img/fast-delivery.png">
 					</div>
@@ -768,35 +789,59 @@
 				<p class="fs-5">Our clients rave about the quality of our work and the level of customer service we provide, consistently describing us as a reliable and trustworthy technology partner. </p>
 			</div>
 		</div>
-		<div class="animation mb-5">
-			<div class="">
-				<div id="demo" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner active">
-						<div class="carousel-item active">
-							<img src="img/Client-slider/Transit fare.png" class="d-block" style="max-width:100%">
+		<div class="animation mt-5" id="slider">
+			<div class="owl-carousel owl-loaded">
+				<div class="owl-stage-outer">
+					<div class="owl-stage">
+						<div class="owl-item">
+							<div class="item">
+								<div class="img">
+									<img src="img/Client-slider/Transit fare.png" style="max-width:100%">									
+								</div>
+							</div>
 						</div>
-						<div class="carousel-item">
-							<img src="img/Client-slider/UseTransit.png" class="d-block" style="max-width:100%">
+						<div class="owl-item">
+							<div class="item">
+								<div class="img">
+									<img src="img/Client-slider/UseTransit.png" style="max-width:100%">									
+								</div>
+							</div>
 						</div>
-						<div class="carousel-item">
-							<img src="img/Client-slider/Greet eat.png" class="d-block" style="max-width:100%">
+						<div class="owl-item">
+							<div class="item">
+								<div class="img">
+									<img src="img/Client-slider/Greet eat.png" style="max-width:100%">
+								</div>
+							</div>
 						</div>
-						<div class="carousel-item">
-							<img src="img/Client-slider/Yellow-Door-Logo.png" class="d-block" style="max-width:100%">
+						<div class="owl-item">
+							<div class="item">
+								<div class="img">
+									<img src="img/Client-slider/Yellow-Door-Logo.png" style="max-width:100%">
+								</div>
+							</div>
 						</div>
-						<div class="carousel-item">
-							<img src="img/Client-slider/vf-external-full-logo-transparent.png" class="d-block" style="max-width:100%">
+						<div class="owl-item">
+							<div class="item">
+								<div class="img">
+									<img src="img/Client-slider/vf-external-full-logo-transparent.png" style="max-width:100%">
+								</div>
+							</div>
 						</div>
-						<div class="carousel-item" class="d-block">
-							<img src="img/Client-slider/potrashot-logo.png" style="max-width:100%">
-						</div>
+						<div class="owl-item">
+							<div class="item">
+								<div class="img">
+									<img src="img/Client-slider/potrashot-logo.png" style="max-width:100%">
+								</div>
+							</div>
+						</div>						
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row g-4 mb-5">
 			<div class="col-md-12 col-lg-6">
-				<div class="card h-100 d-flex flex-md-row">
+				<div class="card d-flex flex-md-row">
 					<div class="row g-0">
 						<img src="img/quotation-mark-second.gif" class="gif">
 						<div class="round col-md-3">
@@ -806,15 +851,15 @@
 							<div class="card-body">
 							    <p class="card-title mt-3">Ava Walker</p>
 							    <p class="card-text text-justify">VeganFitness</p>
-							    <p class="card-text text-justify">This partnership has been a game-changer for us. The team’s professionalism, attention to detail, and technical expertise have made all <span class="d-none"> the difference. Their work has added immense value to our business, and we couldn’t be happier with the results.</span></p>
-							    <button class="btn">see all</button>
+							    <p class="card-text text-justify">This partnership has been a game-changer for us. The team’s professionalism, attention to detail, and technical expertise have made all <span class="d-none span"> the difference. Their work has added immense value to our business, and we couldn’t be happier with the results.</span></p>
+							    <button class="btn display">see more</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-12 col-lg-6">
-				<div class="card h-100 d-flex flex-md-row">
+				<div class="card d-flex flex-md-row">
 					<div class="row g-0">
 						<img src="img/quotation-mark-second.gif" class="gif">
 						<div class="round col-md-3">
@@ -824,15 +869,15 @@
 							<div class="card-body">
 							    <p class="card-title mt-3">Olivia Smith</p>
 							    <p class="card-text text-justify">GreetEat</p>
-							    <p class="card-text text-justify">GreetEat's success is a testament to the innovative solutions provided by Ranpariya Lab.Their unparalleled expertise and <span class="d-none"> commitment to excellence transformed our vision into reality. Ranpariya Lab's exceptional service and technical prowess truly set them apart.</span></p>
-							    <button class="btn">see all</button>
+							    <p class="card-text text-justify">GreetEat's success is a testament to the innovative solutions provided by Ranpariya Lab.Their unparalleled expertise and <span class="d-none span"> commitment to excellence transformed our vision into reality. Ranpariya Lab's exceptional service and technical prowess truly set them apart.</span></p>
+							    <button class="btn display">see more</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-12 col-lg-6">
-				<div class="card h-100 d-flex flex-md-row">
+				<div class="card d-flex flex-md-row">
 					<div class="row g-0">
 						<img src="img/quotation-mark-second.gif" class="gif">
 						<div class="round col-md-3">
@@ -842,15 +887,15 @@
 							<div class="card-body">
 							    <p class="card-title mt-3">Noah Williams</p>
 							    <p class="card-text text-justify">Yellow Door</p>
-							    <p class="card-text text-justify">Incredible service on our Yellow Door project! Ranpariya Lab exceeded our expectations with their unparalleled expertise <span class="d-none"> and unwavering commitment to excellence. Their team's attention to detail and prompt communication made the entire experience seamless and highly satisfying.</span></p>
-							    <button class="btn">see all</button>
+							    <p class="card-text text-justify">Incredible service on our Yellow Door project! Ranpariya Lab exceeded our expectations with their unparalleled expertise <span class="d-none span"> and unwavering commitment to excellence. Their team's attention to detail and prompt communication made the entire experience seamless and highly satisfying.</span></p>
+							    <button class="btn display">see more</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-12 col-lg-6">
-				<div class="card h-100 d-flex flex-md-row">
+				<div class="card d-flex flex-md-row">
 					<div class="row g-0">
 						<img src="img/quotation-mark-second.gif" class="gif">
 						<div class="round col-md-3">
@@ -860,8 +905,8 @@
 							<div class="card-body">
 							    <p class="card-title mt-3">Charlotte Evans</p>
 							    <p class="card-text text-justify">Potrashot</p>
-							    <p class="card-text text-justify">Potrashot's project delivery exceeded expectations, showcasing deep understanding and seamless translation of <span class="d-none"> requirements into a visually stunning, highly functional application. Their commitment to quality and expertise ensures success, making them highly recommended for top-notch development projects.</span></p>
-							    <button class="btn">see all</button>
+							    <p class="card-text text-justify">Potrashot's project delivery exceeded expectations, showcasing deep understanding and seamless translation of <span class="d-none span"> requirements into a visually stunning, highly functional application. Their commitment to quality and expertise ensures success, making them highly recommended for top-notch development projects.</span></p>
+							    <button class="btn display">see more</button>
 							</div>
 						</div>
 					</div>
@@ -888,8 +933,8 @@
 			</div>
 		</div>
 	</section>
-	<section id="footer" class="text-bg-dark">
-		<div class="container pt-5">
+	<footer id="footer" class="text-bg-dark">
+		<div class="container py-5">
 			<div class="row">
 				<div class="col-lg-3 col-md-12">
 					<div class="h-100" id="address">
@@ -960,6 +1005,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</footer>
+
+	<script src="ranpariyaLab.js"></script>
+
 </body>
 </html>
