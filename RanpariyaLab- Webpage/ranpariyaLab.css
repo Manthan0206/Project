@@ -9,6 +9,12 @@ html body{
 .fixed-top{
 	background-color: rgba(252, 254, 255, 0.8);
 }
+#contactUs{
+	background-image: url(img/white_banner_bg.png);
+	ackground-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 #service-CardDeclaration .row .card-container{
 	margin-bottom: 80px;
 }
@@ -93,9 +99,18 @@ html body{
 .owl-stage{
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 }
-.owl-stage .owl-item .item{
-	width: 200px;
+.owl-stage .owl-item{
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.owl-stage .item img{
+	width: 80% !important;
+	display: flex;
+	align-items: center;
 }
 #client .animation img{
 	filter: grayscale(100%);
@@ -161,5 +176,8 @@ html body{
     .processImg >div:nth-child(even) img{
     	transform: rotate(100deg) !important;
     	margin: 20px 0;
+    }
+    #newsletter .row{
+    	width: 75% !important;
     }
 }
