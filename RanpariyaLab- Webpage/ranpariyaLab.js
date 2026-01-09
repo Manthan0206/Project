@@ -34,7 +34,9 @@ $(document).ready(function(){
         nav: false,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        slideTransition: 'linear',
         responsive:{
             0:{
                 items:2
