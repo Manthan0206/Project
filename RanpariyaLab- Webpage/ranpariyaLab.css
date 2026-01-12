@@ -6,6 +6,49 @@
 html body{
 	background-color: #f6f4ff;
 }
+
+.wave {
+  position: relative;
+  margin-top: 80px;
+}
+
+.editorial {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 9em;
+  max-height: 100vh;
+  margin: 0;
+}
+
+.parallax > use {
+  animation: move-forever 5s linear infinite;
+}
+
+.parallax › use:nth-child(1) {
+  animation-delay: -2s;
+}
+
+.parallax › use:nth-child(2) {
+  animation-delay: 4s;
+  animation-duration: 2s;
+}
+
+.parallax › use:nth-child(3) {
+  animation-delay: 6s;
+  animation-duration: 4s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
 .fixed-top{
 	background-color: rgba(252, 254, 255, 0.8);
 }
@@ -14,6 +57,7 @@ html body{
 	ackground-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
 }
 #service-CardDeclaration .row .card-container{
 	margin-bottom: 80px;
