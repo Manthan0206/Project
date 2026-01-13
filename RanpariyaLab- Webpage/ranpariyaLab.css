@@ -8,49 +8,40 @@ html body{
 }
 
 .wave {
-  position: relative;
-  margin-top: 80px;
+    position: relative;
+    margin-top: 80px;
 }
 
 .editorial {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 9em;
-  max-height: 100vh;
-  margin: 0;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 9em;
+    max-height: 100vh;
+    margin: 0;
 }
 
-.parallax > use {
-  animation: move-forever 5s linear infinite;
-}
-
-.parallax › use:nth-child(1) {
-  animation-delay: -2s;
-}
-
-.parallax › use:nth-child(2) {
-  animation-delay: 4s;
-  animation-duration: 2s;
-}
-
-.parallax › use:nth-child(3) {
-  animation-delay: 6s;
-  animation-duration: 4s;
+.parallax use {
+    animation: move-forever 5s linear -2s infinite;
 }
 
 @keyframes move-forever {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-  100% {
-    transform: translate(85px, 0%);
-  }
+    0% {
+    	transform: translate(-90px, 0%);
+    }
+    100% {
+    	transform: translate(85px, 0%);
+    }
 }
 
 .fixed-top{
 	background-color: rgba(252, 254, 255, 0.8);
+}
+
+.svgline{
+	display: flex;
+	justify-content: center;
 }
 #contactUs{
 	background-image: url(img/white_banner_bg.png);
