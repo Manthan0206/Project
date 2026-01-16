@@ -10,6 +10,23 @@ $(document).ready(function(){
     $(window).on("scroll", headerscroll);
     headerscroll();
 
+    const $container = $("#clientCard");
+
+    const $newImage = $("<img>", {
+      src: "img/quotation-mark-second.gif",
+      alt: "Description",
+      css: {
+        Width: "20px",
+        height: "20px",
+        position: "absolute",
+        top: "20px",
+        right: "20px"
+      }
+    });
+
+    $container.append($newImage);
+
+
     $('.display').each(function (index) {
         $(this).on('click', function () {
             const $span = $('.span').eq(index);
