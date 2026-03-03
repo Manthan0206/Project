@@ -10,18 +10,18 @@ $(document).ready(function(){
     $(window).on("scroll", headerscroll);
     headerscroll();
 
-    const $container = $("#clientCard");
+    const $container = $(".clientCard");
 
     const $newImage = $("<img>", {
-      src: "img/quotation-mark-second.gif",
-      alt: "Description",
-      css: {
-        Width: "20px",
-        height: "20px",
-        position: "absolute",
-        top: "20px",
-        right: "20px"
-      }
+        src: "img/quotation-mark-second.gif",
+        alt: "Description",
+        css: {
+            Width: "40px",
+            height: "40px",
+            position: "absolute",
+            top: "20px",
+            right: "20px"
+        }
     });
 
     $container.append($newImage);
